@@ -1,326 +1,109 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>MirasFood — Comida em Mirandiba</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
-    <meta
-        name="description"
-        content="Encontre restaurantes, lanchonetes, padarias, pizzarias e outros lugares para comer em Mirandiba - PE."
-    >
+    <title>MirasFood - Mirandiba PE</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+          href="style.css">
 </head>
 
 <body>
 
-    <header class="header">
-        <div class="container header-content">
-
-            <a href="#" class="logo">
-                <span class="logo-icon">🍴</span>
-                <span>Miras<span>Food</span></span>
-            </a>
-
-            <nav class="navigation">
-                <a href="#inicio">Início</a>
-                <a href="#categorias">Categorias</a>
-                <a href="#lugares">Lugares</a>
-                <a href="#sobre">Sobre</a>
-            </nav>
-
-            <button class="menu-button" id="menuButton">
-                ☰
-            </button>
-
+    <header>
+        <div class="logo">
+            🍴 Miras<span>Food</span>
         </div>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#categorias">Categorias</a>
+            <a href="#lugares">Lugares</a>
+        </nav>
     </header>
-
-
-    <div class="mobile-menu" id="mobileMenu">
-        <a href="#inicio">Início</a>
-        <a href="#categorias">Categorias</a>
-        <a href="#lugares">Lugares</a>
-        <a href="#sobre">Sobre</a>
-    </div>
 
 
     <main>
 
-        <section class="hero" id="inicio">
+        <section id="inicio"
+                 class="hero">
 
-            <div class="container hero-content">
+            <span>📍 Mirandiba - PE</span>
 
-                <div class="hero-text">
+            <h1>
+                Descubra onde
+                <strong>comer bem.</strong>
+            </h1>
 
-                    <span class="hero-tag">
-                        📍 Mirandiba - PE
-                    </span>
+            <p>
+                Encontre restaurantes, lanchonetes,
+                padarias, pizzarias e muito mais.
+            </p>
 
-                    <h1>
-                        Descubra onde
-                        <strong>comer bem.</strong>
-                    </h1>
-
-                    <p>
-                        Encontre restaurantes, lanchonetes, padarias,
-                        pizzarias e muito mais em Mirandiba.
-                    </p>
-
-                    <div class="search-box">
-
-                        <span>🔎</span>
-
-                        <input
-                            type="text"
-                            id="searchInput"
-                            placeholder="O que você está procurando?"
-                            autocomplete="off"
-                        >
-
-                        <button id="searchButton">
-                            Buscar
-                        </button>
-
-                    </div>
-
-                </div>
-
-                <div class="hero-image">
-
-                    <div class="food-card">
-
-                        <div class="food-emoji">
-                            🍔
-                        </div>
-
-                        <div>
-                            <strong>Comida perto de você</strong>
-                            <p>Explore Mirandiba</p>
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <section class="categories-section" id="categorias">
-
-            <div class="container">
-
-                <div class="section-header">
-
-                    <div>
-                        <span class="section-tag">Explore</span>
-                        <h2>O que você está procurando?</h2>
-                    </div>
-
-                    <p>
-                        Escolha uma categoria e encontre lugares
-                        para comer em Mirandiba.
-                    </p>
-
-                </div>
-
-
-                <div class="categories-grid">
-
-                    <button class="category-card" data-category="Restaurante">
-                        <span>🍽️</span>
-                        <strong>Restaurantes</strong>
-                        <small>Comida completa</small>
-                    </button>
-
-                    <button class="category-card" data-category="Lanchonete">
-                        <span>🍔</span>
-                        <strong>Lanchonetes</strong>
-                        <small>Lanches e porções</small>
-                    </button>
-
-                    <button class="category-card" data-category="Padaria">
-                        <span>🥖</span>
-                        <strong>Padarias</strong>
-                        <small>Pães e cafés</small>
-                    </button>
-
-                    <button class="category-card" data-category="Pizzaria">
-                        <span>🍕</span>
-                        <strong>Pizzarias</strong>
-                        <small>Pizzas e massas</small>
-                    </button>
-
-                    <button class="category-card" data-category="Sorveteria">
-                        <span>🍦</span>
-                        <strong>Sorveterias</strong>
-                        <small>Sorvetes e açaí</small>
-                    </button>
-
-                    <button class="category-card" data-category="Todos">
-                        <span>🍴</span>
-                        <strong>Ver todos</strong>
-                        <small>Todos os lugares</small>
-                    </button>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <section class="places-section" id="lugares">
-
-            <div class="container">
-
-                <div class="places-header">
-
-                    <div>
-                        <span class="section-tag">MirasFood</span>
-                        <h2>Lugares para comer</h2>
-                    </div>
-
-                    <select id="categoryFilter">
-
-                        <option value="Todos">
-                            Todas as categorias
-                        </option>
-
-                        <option value="Restaurante">
-                            Restaurantes
-                        </option>
-
-                        <option value="Lanchonete">
-                            Lanchonetes
-                        </option>
-
-                        <option value="Padaria">
-                            Padarias
-                        </option>
-
-                        <option value="Pizzaria">
-                            Pizzarias
-                        </option>
-
-                        <option value="Sorveteria">
-                            Sorveterias
-                        </option>
-
-                    </select>
-
-                </div>
-
-
-                <div
-                    class="places-grid"
-                    id="placesGrid"
-                ></div>
-
-
-                <div
-                    class="empty-state"
-                    id="emptyState"
+            <div class="search">
+                <input
+                    id="search"
+                    type="text"
+                    placeholder="O que você procura?"
                 >
 
-                    <span>🔎</span>
+                <button id="buscar">
+                    Buscar
+                </button>
+            </div>
 
-                    <h3>Nenhum lugar encontrado</h3>
+        </section>
 
-                    <p>
-                        Tente pesquisar por outro nome ou categoria.
-                    </p>
 
-                </div>
+        <section id="categorias"
+                 class="section">
+
+            <h2>Categorias</h2>
+
+            <div class="categorias">
+
+                <button data-category="Restaurante">
+                    🍽️
+                    <b>Restaurantes</b>
+                </button>
+
+                <button data-category="Lanchonete">
+                    🍔
+                    <b>Lanchonetes</b>
+                </button>
+
+                <button data-category="Padaria">
+                    🥖
+                    <b>Padarias</b>
+                </button>
+
+                <button data-category="Pizzaria">
+                    🍕
+                    <b>Pizzarias</b>
+                </button>
+
+                <button data-category="Sorveteria">
+                    🍦
+                    <b>Sorveterias</b>
+                </button>
 
             </div>
 
         </section>
 
 
-        <section class="map-section">
+        <section id="lugares"
+                 class="section">
 
-            <div class="container">
+            <h2>Lugares para comer</h2>
 
-                <div class="map-card">
-
-                    <div class="map-info">
-
-                        <span class="section-tag">
-                            📍 Localização
-                        </span>
-
-                        <h2>
-                            Explore Mirandiba
-                        </h2>
-
-                        <p>
-                            Encontre lugares para comer pela cidade
-                            e descubra novas opções.
-                        </p>
-
-                        <a
-                            href="https://www.google.com/maps/search/comida+em+Mirandiba+-+PE"
-                            target="_blank"
-                            class="map-button"
-                        >
-                            Abrir no Google Maps →
-                        </a>
-
-                    </div>
-
-                    <div class="map-placeholder">
-
-                        <div class="map-pin">
-                            📍
-                        </div>
-
-                        <strong>Mirandiba - PE</strong>
-
-                        <span>
-                            Restaurantes e estabelecimentos
-                        </span>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <section class="about-section" id="sobre">
-
-            <div class="container about-content">
-
-                <div class="about-logo">
-                    🍴
-                </div>
-
-                <div>
-
-                    <span class="section-tag">
-                        Sobre o MirasFood
-                    </span>
-
-                    <h2>
-                        Tudo o que você procura para comer
-                        em um só lugar.
-                    </h2>
-
-                    <p>
-                        O MirasFood foi pensado para facilitar a
-                        descoberta de restaurantes, lanchonetes,
-                        padarias e outros estabelecimentos de
-                        alimentação em Mirandiba - PE.
-                    </p>
-
-                </div>
+            <div id="lugares-lista"
+                 class="lugares">
 
             </div>
 
@@ -329,35 +112,13 @@
     </main>
 
 
-    <footer class="footer">
+    <footer>
 
-        <div class="container footer-content">
+        <strong>🍴 MirasFood</strong>
 
-            <div>
-
-                <a href="#" class="logo footer-logo">
-                    🍴 Miras<span>Food</span>
-                </a>
-
-                <p>
-                    Descubra sabores de Mirandiba.
-                </p>
-
-            </div>
-
-            <div class="footer-links">
-
-                <a href="#inicio">Início</a>
-                <a href="#categorias">Categorias</a>
-                <a href="#lugares">Lugares</a>
-
-            </div>
-
-        </div>
-
-        <div class="copyright">
-            © 2026 MirasFood — Mirandiba - PE
-        </div>
+        <p>
+            Descubra sabores de Mirandiba - PE.
+        </p>
 
     </footer>
 
@@ -365,4 +126,5 @@
     <script src="script.js"></script>
 
 </body>
-  </html>
+
+</html>
